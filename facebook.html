@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Facebook</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .container {
+        border-radius: 5%;
+        height: 100vh;
+        width: 100vh;
+        background-color: #3b579d;
+        position: relative;
+      }
+
+      .f-main-container {
+        position: absolute;
+        height: 80%;
+        width: 30%;
+        right: 20%;
+        bottom: 0;
+        overflow: hidden;
+      }
+
+      .f-main {
+        background-color: white;
+        height: 100vh;
+        width: 100vh;
+        border-radius: 20% 0 0 0;
+      }
+
+      .blue-cutout {
+        background-color: #3b579d;
+        height: 80vh;
+        width: 80vh;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        border-radius: 10%;
+      }
+
+      .f-stroke {
+        background-color: white;
+        width: 43%;
+        height: 15%;
+        position: absolute;
+        right: 20%;
+        bottom: 33%;
+        clip-path: polygon(0% 0%, 100% 0%, 97% 100%, 0% 100%)
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="f-main-container">
+        <div class="f-main"></div>
+        <div class="blue-cutout"></div>
+      </div>
+      <div class="f-stroke"></div>
+    </div>
+  </body>
+
+</html>

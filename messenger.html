@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Messenger</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .bubble {
+        height: 70vh;
+        width: 73vh;
+        background-image: linear-gradient(#00c6ff, #006cff);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      }
+
+      .lightning {
+        height: 25%;
+        width: 30%;
+        display: flex;
+        align-items: center;
+        transform: rotate(45deg)
+      }
+
+      .center-piece {
+        height: 50%;
+        width: 100%;
+        background-color: white;
+        position: relative;
+      }
+
+      .corner {
+        position: absolute;
+        width: 40%;
+        height: 300%;
+        background-color: white;
+      }
+
+      .left-corner {
+        left: 0;
+        clip-path: polygon(0% 0%, 100% 0%, 0% 100%, 0% 100%)
+      }
+
+      .right-corner {
+        right: 0;
+        bottom: 0;
+        clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 0% 100%)
+      }
+
+      .bubble-corner {
+        height: 25%;
+        width: 20%;
+        background-image: linear-gradient(#0075ff 16%, #006dff 55%);
+        position: absolute;
+        z-index: -1;
+        top: 85%;
+        right: 60%;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 55%, 0% 100%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="bubble">
+      <div class="lightning">
+        <div class="center-piece">
+          <div class="left-corner corner"></div>
+          <div class="right-corner corner"></div>
+        </div>
+      </div>
+      <div class="bubble-corner"></div>
+    </div>
+  </body>
+
+</html>
